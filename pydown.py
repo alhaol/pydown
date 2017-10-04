@@ -13,6 +13,8 @@ Name,ID,Folder:  Name is the file name, ID is the youtube unique ID adn Folder i
 """
 parser = optparse.OptionParser(description=desc)
 parser.add_option('--list', '-l',help='File that have the list of files', dest='List', default="List.csv", action='store')
+(opts, args) = parser.parse_args()
+
 
 Default_List=opts.List
 
